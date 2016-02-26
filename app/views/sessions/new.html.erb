@@ -8,6 +8,8 @@
   	  <%= f.input :email, :error => false %>
   	  <%= f.input :password, :error => false %>
   	  
+	    <%= f.input :remember_me, as: :boolean %>
+	  
   	  <%= f.button :submit, "Log In", class: "btn-primary" %>
   	<% end %>
 
