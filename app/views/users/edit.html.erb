@@ -1,0 +1,22 @@
+<% provide(:title, 'Edit user') %>
+<h1 class="center">Update your profile</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+  	<%= simple_form_for(@user, html: { class: 'form-vertical'}) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+  	  <%= f.input :name, :error => false %>
+  	  <%= f.input :email, :error => false %>
+  	  <%= f.input :password, :error => false %>
+  	  <%= f.input :password_confirmation, :error => false %>
+
+  	  <%= f.button :submit, class: "btn-primary" %>
+  	<% end %>
+
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <a href="'http://gravatar.com/emails" target="_blank">change</a>
+    </div>
+  </div>	
+</div>

@@ -2,3 +2,26 @@ frank:
   name: Frank Zappa
   email: frankzappa@gmail.com
   password_digest: <%= User.digest('password') %>
+  admin: true
+
+moon:
+  name: Moon Unit Zappa
+  email: moonzappa@gmail.gov
+  password_digest: <%= User.digest('password') %>
+
+dweezil:
+  name: Dweezil Zappa
+  email: dweezilzappa@gmail.com
+  password_digest: <%= User.digest('password') %>
+
+ahmet:
+  name: Ahmet Zappa
+  email: ahmetzappa@gmail.com
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>
