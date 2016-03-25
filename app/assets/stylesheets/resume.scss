@@ -1,0 +1,72 @@
+// Place all the styles related to the resume controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// font changes
+h1,h2,h3,h4,p,dt,dl,a { 
+	font-family:  Georgia, serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+hr.resume {
+	margin-top: 0px;
+}
+
+h2.resume { 
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+dl.pull-right {
+	text-align: right;
+}
+
+// Resume sections CSS
+#resumeAll {
+	color: #eee;
+}
+
+#rHeader {
+	color: #222;
+	background: rgba(238,238,238, .90);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+	#headerPic {
+		height: 25%;
+		width: 25%;
+		min-height: 150px;
+		min-width: 150px;
+	}
+
+#rEducation {
+	background: rgba(119,119,119, .93);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+#rSkills {
+	background: rgba(85,85,85, .94);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+#rExperience {
+	background: rgba(51,51,51, .95);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+
+#rActivities {
+	background: rgba(34,34,34, .96);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+#rInterests { 
+	background: rgba(17,17,17, .97);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.right.carousel-control, .left.carousel-control {
+    display: none;
+}
+

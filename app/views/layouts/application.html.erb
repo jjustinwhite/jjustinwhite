@@ -2,14 +2,20 @@
 <html>
 <head>
   <title><%= full_title(yield(:title)) %></title>
+  <link rel="shortcut icon" href="http://i.imgur.com/jYLLt5x.png"/>
+  <link rel="apple-touch-icon"
+      sizes="144x144"
+      href="http://i.imgur.com/jYLLt5x.png">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!-- Google Site Ownership -->
+    <meta name="google-site-verification" content="EOJEDr7qh40BBjz9ZMvUDBGkj1W3a_65GivUp8_DRAU" />
 </head>
-<body>
-	<%= render 'layouts/navbar' %>
+<body id="siteBackground">
+<%= render 'layouts/navbar' %>
+<div class="html-mobile-background"></div>
 	<div class="container">
-	
 		<% flash.each do |message_type, message| %>
 			<%= content_tag(:div, class: "alert alert-#{message_type}") do %>
 				<%= message %>

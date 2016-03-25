@@ -1,0 +1,50 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#projectsAll {
+	color: #eee;
+
+	a {
+		color: #eee
+	}
+
+	a:hover {
+		color: #DDDBDC;
+	}
+
+	#to_resume {
+		color: black;
+	}
+}
+
+#pHeader {
+	color: rgb(55,65,80);
+	background: rgba( 219, 223, 231, .75);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+#p2015 {
+	background: rgba( 183, 193, 208, .89);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+#p2014 {
+	background: rgba( 110, 130, 160, .95);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+#p2013 {
+	background: rgba( 82, 97, 120, .95);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+#p2012 {
+	background: rgba( 55, 65, 80, .95);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.page-header {
+	margin-top: 20px;
+	margin-bottom:10px;
+}

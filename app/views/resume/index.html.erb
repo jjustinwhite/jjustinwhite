@@ -1,0 +1,28 @@
+<% provide(:title, 'Resume') %>
+
+<div class="container col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+	<div id="resumeAll">
+		<!-- Header -->
+			<%= render 'resume/header' %>
+		<!-- Education -->
+			<%= render 'resume/education' %>
+		<!-- Skills -->
+			<%= render 'resume/skills' %>
+		<!-- Experience -->
+			<%= render 'resume/experience' %>
+		<!-- Activities -->
+			<%= render 'resume/activities' %>
+		<!-- Interests -->
+			<%= render 'resume/interests' %>
+
+			<br />
+			<div class="row center">
+				<%= link_to "<i class='fa fa-file-code-o'></i>&nbsp; Curious About My Other Projects?".html_safe,
+				 		projects_path, class: "btn btn-default" %>
+			</div>
+			
+	</div>
+	<br />
+</div>
+
+

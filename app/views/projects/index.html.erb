@@ -1,0 +1,17 @@
+<div class="container col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+	<div class="container col-xs-12" id="projectsAll">
+		<%= render 'projects/header' %>
+		<%= render 'projects/p2015' %>
+		<%= render 'projects/p2014' %>
+		<%= render 'projects/p2013' %>
+		<%= render 'projects/p2012' %>
+			
+			<br />
+			<div class="row center">
+				<%= link_to "<i class='fa fa-file-text-o'></i>&nbsp; View My Résumé".html_safe,
+				 		resume_path, class: "btn btn-default", id: "to_resume" %>
+			</div>
+
+		<br />
+	</div>
+</div>
