@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'resume#index'
-  
+  root 'resume#home'
+
   get    'password_resets/new'
   get    'password_resets/edit'
   get    'sessions/new'
